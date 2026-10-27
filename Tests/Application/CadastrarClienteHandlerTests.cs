@@ -1,4 +1,4 @@
-using Application.Abstractions;
+using Application.Interfaces;
 using Application.Clientes.CadastrarCliente;
 using Application.Exceptions;
 using Domain.Entities;

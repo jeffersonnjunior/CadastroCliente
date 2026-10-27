@@ -1,4 +1,4 @@
-using Application.Abstractions;
+using Application.Interfaces;
 using Infrastructure.Persistence.Context;
 
 namespace Infrastructure.Outbox;

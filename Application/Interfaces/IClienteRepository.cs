@@ -1,7 +1,7 @@
 using Domain.Entities;
 using Domain.ValueObjects;
 
-namespace Application.Abstractions;
+namespace Application.Interfaces;
 
 public interface IClienteRepository
 {

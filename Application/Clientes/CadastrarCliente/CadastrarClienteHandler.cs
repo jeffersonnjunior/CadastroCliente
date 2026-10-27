@@ -1,5 +1,5 @@
 using System.Text.Json;
-using Application.Abstractions;
+using Application.Interfaces;
 using Application.Events;
 using Application.Exceptions;
 using Domain.Entities;

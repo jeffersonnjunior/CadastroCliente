@@ -1,4 +1,4 @@
-using Application.Abstractions;
+using Application.Interfaces;
 using Domain.Entities;
 using Domain.ValueObjects;
 using Infrastructure.Persistence.Context;

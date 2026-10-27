@@ -1,4 +1,4 @@
-using Application.Abstractions;
+using Application.Interfaces;
 using Infrastructure.Messaging;
 using Infrastructure.Messaging.RabbitMq;
 using Infrastructure.Outbox;
