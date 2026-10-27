@@ -1,3 +1,7 @@
+# Opcional: sobe só a infraestrutura (sem API).
+# Uso típico: desenvolver com `dotnet run --project Api`.
+# Para stack completa, prefira: docker compose up -d --build
+
 services:
   rabbitmq:
     image: rabbitmq:3.13-management
@@ -26,5 +30,5 @@ services:
       test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "Your_strong_Password123" -C -Q "SELECT 1" || exit 1
       interval: 10s
       timeout: 5s
-      retries: 10
-      start_period: 30s
+      retries: 15
+      start_period: 40s
