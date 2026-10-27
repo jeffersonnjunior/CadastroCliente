@@ -1,5 +1,5 @@
 using Domain.Entities;
-using Infrastructure.Persistence.Outbox;
+using Infrastructure.Outbox;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Context;

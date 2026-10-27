@@ -1,7 +1,7 @@
 using Application.Abstractions;
 using Infrastructure.Persistence.Context;
 
-namespace Infrastructure.Persistence.Outbox;
+namespace Infrastructure.Outbox;
 
 public sealed class OutboxWriter : IOutboxWriter
 {

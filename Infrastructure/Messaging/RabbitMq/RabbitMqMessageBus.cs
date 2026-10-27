@@ -5,7 +5,7 @@ using Polly;
 using Polly.Retry;
 using RabbitMQ.Client;
 
-namespace Infrastructure.Messaging;
+namespace Infrastructure.Messaging.RabbitMq;
 
 public sealed class RabbitMqMessageBus : IMessageBus, IAsyncDisposable
 {

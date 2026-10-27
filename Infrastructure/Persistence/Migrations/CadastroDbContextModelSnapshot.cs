@@ -56,7 +56,7 @@ namespace Infrastructure.Persistence.Migrations
                     b.ToTable("clientes", (string)null);
                 });
 
-            modelBuilder.Entity("Infrastructure.Persistence.Outbox.OutboxMessage", b =>
+            modelBuilder.Entity("Infrastructure.Outbox.OutboxMessage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

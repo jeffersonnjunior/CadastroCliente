@@ -1,8 +1,9 @@
 using Application.Abstractions;
 using Infrastructure.Messaging;
+using Infrastructure.Messaging.RabbitMq;
+using Infrastructure.Outbox;
 using Infrastructure.Persistence;
 using Infrastructure.Persistence.Context;
-using Infrastructure.Persistence.Outbox;
 using Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
