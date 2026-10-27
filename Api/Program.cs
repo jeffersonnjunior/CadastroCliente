@@ -6,8 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 builder.Services.AddProblemDetails();
 builder.Services.DependencyInjectionApplication(configuration);
 builder.Services.DependencyInjectionInfrastructure(configuration);
@@ -18,8 +17,7 @@ await app.Services.MigrateDatabaseAsync();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();

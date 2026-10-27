@@ -22,7 +22,7 @@ Isso sobe:
 | Serviço | URL / acesso |
 |---------|----------------|
 | API | http://localhost:8080 |
-| Swagger | http://localhost:8080/swagger |
+| OpenAPI | http://localhost:8080/openapi/v1.json |
 | Health | http://localhost:8080/health |
 | RabbitMQ UI | http://localhost:15672 (guest/guest) |
 | SQL Server | `localhost,1433` · sa / `Your_strong_Password123` |
