@@ -1,0 +1,18 @@
+@host = http://localhost:5214
+
+### Health
+GET {{host}}/health
+
+### Cadastrar cliente (CPF válido de exemplo)
+POST {{host}}/api/v1/clientes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "cpf": "529.982.247-25",
+  "email": "maria.silva@email.com"
+}
+
+### Obter cliente (troque o id)
+@clienteId = 00000000-0000-0000-0000-000000000000
+GET {{host}}/api/v1/clientes/{{clienteId}}
