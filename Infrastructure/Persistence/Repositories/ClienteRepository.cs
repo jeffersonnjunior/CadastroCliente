@@ -27,6 +27,7 @@ public sealed class ClienteRepository : IClienteRepository
 
     public Task<bool> ExistsByCpfAsync(Cpf cpf, CancellationToken cancellationToken = default)
     {
-        return _db.Clientes.AnyAsync(x => x.Cpf.Value == cpf.Value, cancellationToken);
+        // Comparar o VO inteiro (ValueConverter) — .Value não traduz no EF Core.
+        return _db.Clientes.AnyAsync(x => x.Cpf == cpf, cancellationToken);
     }
 }
