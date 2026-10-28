@@ -2,6 +2,13 @@
 
 Microsserviço de entrada do fluxo de concessão de crédito. Valida CPF/e-mail, persiste o cliente e publica `ClienteCadastrado` via **outbox + RabbitMQ**.
 
+## Diagrama
+
+Fluxo ponta a ponta da concessão de crédito (Excalidraw):  
+[`docs/fluxo-concessao-credito.excalidraw`](docs/fluxo-concessao-credito.excalidraw)
+
+Abra em [excalidraw.com](https://excalidraw.com) → **Open** → selecione o arquivo.
+
 ## Processos
 
 | Projeto | Responsabilidade |
