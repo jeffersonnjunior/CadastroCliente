@@ -6,8 +6,8 @@ services:
       - "5672:5672"
       - "15672:15672"
     environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_USER: credito
+      RABBITMQ_DEFAULT_PASS: credito123
     healthcheck:
       test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
       interval: 10s
@@ -42,8 +42,8 @@ services:
       ConnectionStrings__Default: Server=sqlserver,1433;Database=CadastroCliente;User Id=sa;Password=Your_strong_Password123;TrustServerCertificate=True;Encrypt=False
       RabbitMq__Host: rabbitmq
       RabbitMq__Port: "5672"
-      RabbitMq__UserName: guest
-      RabbitMq__Password: guest
+      RabbitMq__UserName: credito
+      RabbitMq__Password: credito123
       RabbitMq__Exchange: credito.clientes
       RabbitMq__RoutingKey: cliente.cadastrado
       RabbitMq__Enabled: "true"

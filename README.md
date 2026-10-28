@@ -24,7 +24,7 @@ Isso sobe:
 | API | http://localhost:8080 |
 | OpenAPI | http://localhost:8080/openapi/v1.json |
 | Health | http://localhost:8080/health |
-| RabbitMQ UI | http://localhost:15672 (guest/guest) |
+| RabbitMQ UI | http://localhost:15672 (credito / credito123) |
 | SQL Server | `localhost,1433` · sa / `Your_strong_Password123` |
 
 Logs da API:
